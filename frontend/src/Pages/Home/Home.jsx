@@ -53,7 +53,7 @@ const Home = () => {
               marginTop: "1rem",
             }}
           >
-            Abhigna
+            Abhigna Bandi
           </Title>
 
           <Text
