@@ -1,6 +1,6 @@
 import React,{use,useEffect,unState, useState} from 'react'
 import Service from '../../utils/http'
-import { Avatar,Text } from '@mantine/core';
+import { Avatar,Center,Text } from '@mantine/core';
 import { Stack, Button } from '@mantine/core';
 
 const service = new Service();
@@ -23,7 +23,7 @@ export default function Profile() {
       gap="md"
     >
     <div>
-         <Avatar color="cyan" radius="xl">A</Avatar>
+        <Center><Avatar src = {profileData?.avatar} size="xl"/></Center>
         <Text>{profileData?.email}</Text>
         <Text>{profileData?.name}</Text>
     </div>
