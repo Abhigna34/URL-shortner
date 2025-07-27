@@ -15,18 +15,17 @@ export default function Profile() {
     useEffect(()=>{
     getProfileData()},[])
   return (
-    <Stack
+   <Stack
       h={300}
       bg="var(--mantine-color-body)"
       align="center"
-      justify="center"
-      gap="md"
+      justify="space-between"
+      gap="sm"
     >
-    <div>
         <Center><Avatar src = {profileData?.avatar} size="xl"/></Center>
-        <Text>{profileData?.email}</Text>
-        <Text>{profileData?.name}</Text>
-    </div>
+        <Text><strong>Username: </strong>{profileData?.email}</Text>
+        <Text><strong>Email: </strong>{profileData?.name}</Text>
+   
     </Stack>
   )
 }
